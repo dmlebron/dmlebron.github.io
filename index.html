@@ -3,48 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hurutungo</title>
+  <title>Hurutungo LLC</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       margin: 0;
-      background: linear-gradient(135deg, #4e73df, #1cc88a);
+      background: #fdfdfd;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #fca311, #ff5a5f);
       color: white;
       text-align: center;
+      padding: 3rem 1rem;
     }
-    .container {
-      max-width: 600px;
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
     }
-    h1 {
-      font-size: 3rem;
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    section {
+      padding: 2rem 1rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .company {
+      background: white;
+      padding: 2rem;
+      margin: 1.5rem 0;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .company img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .company h2 {
+      color: #ff5a5f;
       margin-bottom: 0.5rem;
     }
-    p {
-      font-size: 1.25rem;
-      margin-bottom: 1.5rem;
-    }
-    a {
-      background: white;
-      color: #4e73df;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    a:hover {
-      background: #e2e6ea;
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #f4f4f4;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Hurutungo</h1>
-    <p>Welcome to our website. Stay tuned for more!</p>
-    <a href="mailto:hello@hurutungo.com">Contact Us</a>
-  </div>
+
+  <header>
+    <h1>Hurutungo LLC</h1>
+    <p>Growing businesses with passion and flavor.</p>
+  </header>
+
+  <section>
+    <h2 style="text-align:center;">Our Ventures</h2>
+
+    <!-- Example Company Block -->
+    <div class="company">
+      <!-- Replace this image link with your own -->
+      <img src="https://via.placeholder.com/800x400.png?text=Ice+Cream+Shop" alt="Ice Cream Shop">
+      
+      <h2>Hurutungo Ice Cream</h2>
+      <p>
+        Our first venture under the Hurutungo LLC family is a locally inspired ice cream shop. 
+        We focus on fresh ingredients, creative flavors, and building community around something everyone loves: ice cream.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; <span id="year"></span> Hurutungo LLC — All rights reserved.
+  </footer>
+
+  <script>
+    // Auto-updates year in footer
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
