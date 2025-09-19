@@ -46,11 +46,14 @@
     }
 
     .company img {
-      max-width: 600px;
-      width: 100%;
-      height: auto;
+      max-width: 600px;   /* Don’t let it grow too wide */
+      width: 100%;        /* Still scales down on small screens */
+      height: auto;       /* Keeps proportions */
       border-radius: 10px;
       margin-bottom: 1rem;
+      display: block;     /* Ensures proper centering */
+      margin-left: auto;  /* Center horizontally */
+      margin-right: auto; /* Center horizontally */
     }
 
     .company h2 {
