@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +12,13 @@
       background: #fdfdfd;
       color: #333;
       line-height: 1.6;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
     }
 
     header {
@@ -41,24 +49,34 @@
       padding: 2rem;
       margin: 1.5rem 0;
       border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
       text-align: center;
     }
 
     .company img {
-      max-width: 400px;     /* smaller width limit */
-      max-height: 250px;    /* keep height under control */
-      width: 100%;          /* scale down on small screens */
-      height: auto;         /* keep proportions */
+      max-width: 400px;
+      /* smaller width limit */
+      max-height: 250px;
+      /* keep height under control */
+      width: 100%;
+      /* scale down on small screens */
+      height: auto;
+      /* keep proportions */
       border-radius: 10px;
-      margin: 0 auto 1rem;  /* center horizontally */
+      margin: 0 auto 1rem;
+      /* center horizontally */
       display: block;
-      object-fit: cover;    /* crops instead of squishing if needed */
+      object-fit: cover;
+      /* crops instead of squishing if needed */
     }
 
     .company h2 {
       color: #ff5a5f;
       margin-bottom: 0.5rem;
+    }
+
+    main {
+      flex: 1;
     }
 
     footer {
@@ -71,6 +89,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <header>
@@ -78,22 +97,21 @@
     <p>Growing businesses with passion and flavor.</p>
   </header>
 
-  <section>
-    <h2 style="text-align:center;">Our Ventures</h2>
+  <main>
+    <section>
+      <h2 style="text-align:center;">Our Ventures</h2>
+      <div class="company">
+        <img src="icecream.jpg" alt="Ice Cream Shop">
 
-    <!-- Example Company Block -->
-    <div class="company">
-      <!-- Replace this image link with your own -->
-      <img src="icecream.jpg" alt="Ice Cream Shop">
-      
-      <h2>Ice Cream Store</h2>
-      <p>
-        Our first venture under the Hurutungo LLC family is a locally inspired ice cream shop. 
-        We focus on fresh ingredients, creative flavors, and building community around something everyone loves: ice cream.
-      </p>
-    </div>
-  </section>
-
+        <h2>Ice Cream Store</h2>
+        <p>
+          Our first venture under the Hurutungo LLC family is a locally inspired ice cream shop.
+          We focus on fresh ingredients, creative flavors, and building community around something everyone loves: ice
+          cream.
+        </p>
+      </div>
+    </section>
+  </main>
   <footer>
     &copy; <span id="year"></span> Hurutungo LLC — All rights reserved.
   </footer>
@@ -104,4 +122,5 @@
   </script>
 
 </body>
+
 </html>
