@@ -52,11 +52,15 @@
       background: linear-gradient(135deg, #111827, #1f2937);
       position: relative;
       overflow: hidden;
+      border-bottom: 3px solid #6366f1;
+      box-shadow: inset 0 -10px 30px rgba(99, 102, 241, 0.2);
     }
 
     .hero h1 {
       font-size: 3rem;
       margin-bottom: 1rem;
+      color: #6366f1;
+      text-shadow: 0 2px 8px rgba(99, 102, 241, 0.4);
     }
 
     .hero p {
@@ -64,6 +68,9 @@
       margin: 0 auto 2rem;
       font-size: 1.2rem;
       color: #d1d5db;
+      border-top: 2px solid rgba(99, 102, 241, 0.3);
+      padding-top: 1rem;
+      display: inline-block;
     }
 
     .hero button {
@@ -93,6 +100,9 @@
     .companies h2 {
       margin-bottom: 2rem;
       font-size: 2rem;
+      border-bottom: 3px solid #6366f1;
+      display: inline-block;
+      padding-bottom: 0.5rem;
     }
 
     .company {
@@ -101,6 +111,13 @@
       background: #1f2937;
       padding: 2rem;
       border-radius: 12px;
+      border: 1px solid rgba(99, 102, 241, 0.2);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .company:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(99, 102, 241, 0.2);
     }
 
     .company img {
@@ -132,8 +149,16 @@
     .contact textarea {
       padding: 0.75rem;
       border-radius: 8px;
-      border: none;
+      border: 2px solid #e2e8f0;
       font-size: 1rem;
+      transition: border 0.3s, box-shadow 0.3s;
+    }
+
+    .contact input:focus,
+    .contact textarea:focus {
+      border: 2px solid #6366f1;
+      box-shadow: 0 0 8px rgba(99, 102, 241, 0.3);
+      outline: none;
     }
 
     .contact button {
@@ -159,6 +184,7 @@
       background: #0f0f0f;
       color: #9ca3af;
       font-size: 0.9rem;
+      border-top: 3px solid #6366f1;
     }
   </style>
 </head>
